@@ -22,6 +22,8 @@ export const university = [
     "글로벌인재학부",
 ];
 
+export const dormitory = ["성실관", "봉사관", "진리관", "화목관", "향토관", "면학관", "첨성관", "명의관", "누리관", "보람관", "선의관"];
+
 export const birth = Array.from({ length: 12 }, (v, k) => {
     return {
         value: k + 1995,

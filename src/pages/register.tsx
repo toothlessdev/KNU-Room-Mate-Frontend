@@ -1,7 +1,10 @@
 import { useCallback, useState } from "react";
+
 import { Button } from "@/core/forms/Button";
 import { ButtonGroup } from "@/core/forms/ButtonGroup";
+
 import { BaseForm } from "@/components/register-page/BaseForm";
+import { SleepForm } from "@/components/register-page/SleepForm";
 
 export default function RegisterPage() {
     const [step, setStep] = useState<number>(0);
@@ -16,7 +19,7 @@ export default function RegisterPage() {
     return (
         <>
             {step === 0 && <BaseForm />}
-            {/* {step === 1 && <} */}
+            {step === 1 && <SleepForm />}
 
             <ButtonGroup>
                 <Button variant="stroke" width="45%" onClick={onPrevBtnClick}>
